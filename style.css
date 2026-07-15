@@ -1,0 +1,130 @@
+/* style.css
+   Custom styling for the Customer Churn Prediction Streamlit app. */
+
+/* ---------- Global ---------- */
+html, body, [class*="css"] {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.main {
+    background-color: #f7f9fb;
+}
+
+/* ---------- Headings ---------- */
+h1 {
+    color: #1a2b4c;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+h2, h3 {
+    color: #1a2b4c;
+    font-weight: 600;
+}
+
+/* ---------- Header banner ---------- */
+.app-header {
+    background: linear-gradient(90deg, #1a2b4c 0%, #2d4a7a 100%);
+    padding: 1.75rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.app-header h1 {
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+}
+
+.app-header p {
+    color: #d7e0f0;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* ---------- Metric / result cards ---------- */
+.result-card {
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    border-left: 6px solid #2d4a7a;
+    margin-bottom: 1rem;
+}
+
+.result-card.risk-low {
+    border-left-color: #2e8b57;
+}
+
+.result-card.risk-medium {
+    border-left-color: #d99323;
+}
+
+.result-card.risk-high {
+    border-left-color: #c0392b;
+}
+
+.risk-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #ffffff;
+}
+
+.risk-badge.low {
+    background-color: #2e8b57;
+}
+
+.risk-badge.medium {
+    background-color: #d99323;
+}
+
+.risk-badge.high {
+    background-color: #c0392b;
+}
+
+/* ---------- Buttons ---------- */
+.stButton > button {
+    background-color: #1a2b4c;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.stButton > button:hover {
+    background-color: #2d4a7a;
+    color: #ffffff;
+}
+
+/* ---------- Sidebar ---------- */
+section[data-testid="stSidebar"] {
+    background-color: #101b30;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #e6ecf7;
+}
+
+/* ---------- Tabs ---------- */
+button[data-baseweb="tab"] {
+    font-weight: 600;
+}
+
+/* ---------- Dataframe / table ---------- */
+[data-testid="stDataFrame"] {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* ---------- Footer note ---------- */
+.footer-note {
+    text-align: center;
+    color: #8a94a6;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+}
